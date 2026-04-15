@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4 Wentao Mou</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+</head>
+
+<body>
+    <main>
+        <header id="intro">
+            <h1>How a Small Number of States Decides U.S. Presidential Elections</h1>
+            <p class="intro-text">
+                National presidential results can look stable from year to year, but the coalition that produces a win
+                is much more geographic.
+                Scroll down to move from the national vote, to the closest 2020 battlegrounds, to the states that
+                realigned over time, and finally to the regional structure of the 2020 winning map.
+            </p>
+        </header>
+
+        <section id="scrolly">
+            <div class="sticky">
+                <div class="chart-frame">
+                    <div id="chart"></div>
+                </div>
+            </div>
+
+            <article class="scroll">
+                <section class="step" data-step="0">
+                    <div class="step-card">
+                        <p class="step-number">01</p>
+                        <h2>The national vote usually stays tight</h2>
+                        <p>
+                            Looking only at the national two-party vote, most elections since 1976 stayed within a
+                            fairly narrow band.
+                            A few cycles were clear wins, but many of them were decided by only a few points once the
+                            vote is collapsed into one national number.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="step" data-step="1">
+                    <div class="step-card">
+                        <p class="step-number">02</p>
+                        <h2>2020 depended on a handful of close states</h2>
+                        <p>
+                            The 2020 result did not hinge on every state equally.
+                            Georgia, Arizona, Wisconsin, and Pennsylvania were all extremely close, which means a modest
+                            national edge was turned into a winning map through a very small set of battlegrounds.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="step" data-step="2">
+                    <div class="step-card">
+                        <p class="step-number">03</p>
+                        <h2>Realignment came from specific places</h2>
+                        <p>
+                            Comparing 2008 to 2020 shows that states did not move together.
+                            Arizona and Georgia shifted toward Democrats, while Iowa, Ohio, and West Virginia moved
+                            sharply toward Republicans, showing that the national story hides very different regional
+                            paths.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="step" data-step="3">
+                    <div class="step-card">
+                        <p class="step-number">04</p>
+                        <h2>The winning coalitions were regional</h2>
+                        <p>
+                            The 2020 treemap groups winning states first by party and then by region.
+                            Democratic winning votes are concentrated in large coastal and metro-heavy states plus a few
+                            flips, while Republican winning votes are spread across the South and interior.
+                        </p>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <script src="data/storyData.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    background-color: #ffffff;
+    color: #111111;
+    overflow-x: hidden;
+}
+#intro {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#intro h1 {
+    max-width: 850px;
+    margin: 0;
+    font-size: clamp(36px, 7vw, 56px);
+    line-height: 1.05;
+}
+.intro-text {
+    max-width: 760px;
+    margin-top: 20px;
+    font-size: clamp(16px, 2.2vw, 18px);
+    line-height: 1.7;
+    color: #444444;
+}
+#scrolly {
+    position: relative;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffff;
+}
+.chart-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#chart {
+    width: 100%;
+    height: 100%;
+}
+#chart svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.scroll {
+    position: relative;
+    z-index: 1;
+    width: 320px;
+    margin-left: 24px;
+    padding-bottom: 20vh;
+}
+.step {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.step-card {
+    width: 100%;
+    padding: 20px 18px 24px;
+    box-sizing: border-box;
+    min-height: 260px;
+    background-color: rgba(255, 255, 255, 0.66);
+    border: none;
+    opacity: 0.28;
+    transition: opacity 0.25s ease;
+}
+.step.is-active .step-card {
+    opacity: 0.92;
+}
+.step-number {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    font-weight: bold;
+    color: #2b6cb0;
+}
+.step-card h2 {
+    margin: 0;
+    font-size: clamp(28px, 4.6vw, 34px);
+    line-height: 1.12;
+}
+.step-card p:last-child {
+    margin: 12px 0 0 0;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444444;
+}
+.axis text {
+    font-size: 12px;
+    fill: #666666;
+}
+.axis path {
+    stroke: #d1d1d6;
+}
+.axis line {
+    stroke: #d1d1d6;
+}
+.grid line {
+    stroke: #e5e5ea;
+}
+.grid path {
+    stroke: none;
+}
+.axis-label {
+    fill: #555555;
+    font-size: 12px;
+}
+.annotation {
+    fill: #555555;
+    font-size: 12px;
+}
+.legend-label {
+    fill: #555555;
+    font-size: 12px;
+}
+.chart-label {
+    fill: #555555;
+    font-size: 12px;
+}
+.party-label {
+    font-size: 12px;
+    font-weight: bold;
+}
+.state-label {
+    fill: #333333;
+    font-size: 11px;
+    font-weight: bold;
+}
+.tooltip {
+    position: fixed;
+    pointer-events: none;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+.tooltip.visible {
+    opacity: 1;
+}
+.chart-group {
+    opacity: 0;
+    pointer-events: none;
+}
+.chart-group.active {
+    pointer-events: auto;
+}
+.line-dem {
+    fill: none;
+    stroke-width: 3px;
+    stroke: #2b6cb0;
+}
+.line-rep {
+    fill: none;
+    stroke-width: 3px;
+    stroke: #c53030;
+}
+.line-point {
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+}
+.close-dot {
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+}
+.realignment-dot {
+    stroke: #ffffff;
+    stroke-width: 1.5px;
+}
+.lollipop-stem {
+    stroke-width: 2px;
+}
+.diagonal {
+    stroke: #999999;
+    stroke-width: 1.5px;
+    stroke-dasharray: 5 5;
+}
+.treemap-parent {
+    fill: none;
+    stroke-width: 2px;
+}
+.treemap-leaf {
+    stroke-width: 2px;
+}
+.treemap-text {
+    fill: #111111;
+    font-size: 11px;
+    font-weight: bold;
+    pointer-events: none;
+}
+.treemap-subtext {
+    fill: #333333;
+    font-size: 10px;
+    pointer-events: none;
+}
